@@ -1,7 +1,10 @@
 let currentDayElement = document.getElementById('currentDay');
 let today = (moment().format('LLLL'));
 currentDayElement.textContent = today;
+$('.col-md-2').css('color', 'red')
+$('.display-3').css('color', 'blue')
 
+// creating the color of the blocks depending on the time of the day
 function callTime(hour) {
     if (hour < today) {
         return "past";
